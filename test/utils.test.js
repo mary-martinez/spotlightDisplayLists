@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { renderString, renderShoe, renderToy } from '../utils.js';
+import { renderString, renderShoe, renderToy, renderFruit } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -37,5 +37,20 @@ test('renderToy should return a <div> with a toy description', (expect) => {
         colors: ['pink', 'blue', 'purple']
     })
 
+    expect.equal(actual.outerHTML, expected);
+});
+
+test('renderFruit should return a <div> with information about a fruit', (expect) => {
+    const expected = `<div class="fruit"><h2>APPLE</h2><img src="../assets/apple.png"><ul>Nutrition facts for one apple:<li>Calories: 95</li><li>Sugar: 19g</li><li>Prime source of fiber</li></ul></div>`;
+
+    const actual = renderFruit({
+        type: 'apple',
+        img: '../assets/apple.png',
+        nutrition: {
+            calories: 95,
+            sugar: 19,
+            nutrient: 'fiber'
+        }
+    });
     expect.equal(actual.outerHTML, expected);
 });

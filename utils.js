@@ -50,3 +50,34 @@ export function renderToy(toy) {
     div.append(h2, p);
     return div;
 }
+
+export function renderFruit(fruit) {
+    const div = document.createElement('div');
+    div.classList.add('fruit');
+
+    const h2 = document.createElement('h2');
+    let fruitType = '';
+    fruitType = fruit.type;
+    h2.textContent = fruitType.toUpperCase();
+
+    const img = document.createElement('img');
+    img.src = `${fruit.img}`;
+
+    const ul = document.createElement('ul');
+    ul.textContent = `Nutrition facts for one ${fruit.type}:`;
+
+    const liCalories = document.createElement('li');
+    liCalories.textContent = `Calories: ${fruit.nutrition.calories}`;
+
+    const liSugar = document.createElement('li');
+    liSugar.textContent = `Sugar: ${fruit.nutrition.sugar}g`;
+
+    const liNutrient = document.createElement('li');
+    liNutrient.textContent = `Prime source of ${fruit.nutrition.nutrient}`;
+
+    ul.append(liCalories, liSugar, liNutrient);
+
+    div.append(h2, img, ul);
+
+    return div;
+}
