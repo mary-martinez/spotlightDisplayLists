@@ -52,6 +52,16 @@ export function renderToy(toy) {
 }
 
 export function renderFruit(fruit) {
+    // example:
+    // <div class="fruit">
+    //     <h2>Apple</h2>
+    //     <img src="../assets/apple.png" />
+    //     <ul>Nutrition facts per apple:
+    //         <li>Calories: 95</li>
+    //         <li>Sugar: 19g</li>
+    //         <li>Prime source of: fiber</li>
+    //     </ul>
+    // </div>
     const div = document.createElement('div');
     div.classList.add('fruit');
 
