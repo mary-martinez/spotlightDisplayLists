@@ -1,1 +1,1 @@
-const stringArray = ['yarn', 'twine', 'guitar', 'dental'];
+export const stringArray = ['yarn', 'twine', 'guitar', 'dental'];
