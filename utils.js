@@ -5,6 +5,12 @@ export function renderString(myString) {
 }
 
 export function renderShoe(shoe) {
+    // template:
+    // <div class="shoeObjects">
+    //         <h2>High heels</h2>
+    //         <h3>Style level: 10</h3>
+    //         <p>Worn for beauty.</p>
+    //  </div>
     const div = document.createElement('div');
     div.classList.add('shoeObjects');
 
