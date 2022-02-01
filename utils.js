@@ -26,3 +26,27 @@ export function renderShoe(shoe) {
     div.append(h2, h3, p);
     return div;
 }
+
+export function renderToy(toy) {
+    const div = document.createElement('div');
+    div.classList.add('toy');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = toy.name;
+
+    const colorsArray = toy.colors;
+    let tempColors = '';
+    for (let i = 0; i < colorsArray.length; i++) {
+        if (i === 0) {
+            tempColors = `${colorsArray[i]}`;
+        } else if (i === (colorsArray.length - 1)) {
+            tempColors = `${tempColors}, and ${colorsArray[i]}`;
+        } else {
+            tempColors = `${tempColors}, ${colorsArray[i]}`;
+        }
+    }
+    const p = document.createElement('p');
+    p.textContent = `${toy.name} is a ${tempColors} ${toy.type}.`
+    div.append(h2, p);
+    return div;
+}
