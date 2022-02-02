@@ -1,0 +1,1 @@
+export const stringArray = ['yarn', 'twine', 'guitar', 'dental'];

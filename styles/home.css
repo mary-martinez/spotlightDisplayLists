@@ -1,1 +1,19 @@
 /* add home page styles here */
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div {
+    margin: calc(var(--gutter)*2);
+    padding: var(--gutter);
+    border: gray 2px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+}
