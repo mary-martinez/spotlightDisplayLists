@@ -26,4 +26,4 @@ export const fruitArray = [
             nutrient: 'vitamin C'
         }
     }
-]
+];

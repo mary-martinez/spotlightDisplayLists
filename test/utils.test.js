@@ -35,7 +35,7 @@ test('renderToy should return a <div> with a toy description', (expect) => {
         name: 'Broccoli',
         type: 'unicorn',
         colors: ['pink', 'blue', 'purple']
-    })
+    });
 
     expect.equal(actual.outerHTML, expected);
 });

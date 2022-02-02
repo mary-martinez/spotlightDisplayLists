@@ -46,7 +46,7 @@ export function renderToy(toy) {
         }
     }
     const p = document.createElement('p');
-    p.textContent = `${toy.name} is a ${tempColors} ${toy.type}.`
+    p.textContent = `${toy.name} is a ${tempColors} ${toy.type}.`;
     div.append(h2, p);
     return div;
 }

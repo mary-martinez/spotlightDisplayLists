@@ -14,4 +14,4 @@ export const toysArray = [
         type: 'elephant',
         colors: ['blue', 'white', 'orange', 'yellow']
     }
-]
+];

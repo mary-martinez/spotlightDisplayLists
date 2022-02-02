@@ -1,9 +1,9 @@
 // import functions and grab DOM elements
-import { renderString, renderShoe, renderToy, renderFruit } from "./utils.js";
-import { stringArray } from "./string-data.js";
-import { shoesArray } from "./shoes-data.js";
-import { toysArray } from "./toys-data.js";
-import { fruitArray } from "./fruit-data.js";
+import { renderString, renderShoe, renderToy, renderFruit } from './utils.js';
+import { stringArray } from './string-data.js';
+import { shoesArray } from './shoes-data.js';
+import { toysArray } from './toys-data.js';
+import { fruitArray } from './fruit-data.js';
 
 const stringList = document.getElementById('stringsList');
 const shoeObjects = document.getElementById('shoesArray');
